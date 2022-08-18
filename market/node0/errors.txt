@@ -1,0 +1,88 @@
+INFO [06-29|14:56:39.769] Maximum peer count                       ETH=50 LES=0 total=50
+WARN [06-29|14:56:39.770] The flag --rpccorsdomain is deprecated and will be removed in the future, please use --http.corsdomain 
+INFO [06-29|14:56:39.770] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+ERROR[06-29|14:56:39.775] Failed to enumerate USB devices          hub=ledger vendor=11415 failcount=1 err="failed to initialize libusb: libusb: unknown error [code -99]"
+ERROR[06-29|14:56:39.775] Failed to enumerate USB devices          hub=trezor vendor=21324 failcount=1 err="failed to initialize libusb: libusb: unknown error [code -99]"
+ERROR[06-29|14:56:39.775] Failed to enumerate USB devices          hub=trezor vendor=4617  failcount=1 err="failed to initialize libusb: libusb: unknown error [code -99]"
+ERROR[06-29|14:56:39.776] Failed to enumerate USB devices          hub=ledger vendor=11415 failcount=2 err="failed to initialize libusb: libusb: unknown error [code -99]"
+ERROR[06-29|14:56:39.776] Failed to enumerate USB devices          hub=trezor vendor=21324 failcount=2 err="failed to initialize libusb: libusb: unknown error [code -99]"
+ERROR[06-29|14:56:39.776] Failed to enumerate USB devices          hub=trezor vendor=4617  failcount=2 err="failed to initialize libusb: libusb: unknown error [code -99]"
+WARN [06-29|14:56:39.778] The flag --gasprice is deprecated and will be removed in the future, please use --miner.gasprice 
+INFO [06-29|14:56:39.778] Set global gas cap                       cap=25000000
+WARN [06-29|14:56:39.778] Sanitizing invalid miner gas price       provided=0 updated=0
+INFO [06-29|14:56:39.778] Allocated trie memory caches             clean=256.00MiB dirty=256.00MiB
+INFO [06-29|14:56:39.779] Allocated cache and file handles         database=/home/administrator/demoPOA2/node0/geth/chaindata cache=512.00MiB handles=524288
+INFO [06-29|14:56:40.051] Opened ancient database                  database=/home/administrator/demoPOA2/node0/geth/chaindata/ancient
+INFO [06-29|14:56:40.053] Initialised chain configuration          config="{ChainID: 56424 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: 0 Istanbul: 0, Muir Glacier: <nil>, YOLO v2: <nil>, Engine: clique}"
+INFO [06-29|14:56:40.054] Initialising Ethereum protocol           versions="[65 64 63]" network=56424 dbversion=<nil>
+WARN [06-29|14:56:40.054] Upgrade blockchain database version      from=<nil> to=8
+INFO [06-29|14:56:40.057] Loaded most recent local header          number=0 hash="5614bf…3daf7e" td=1 age=1y1mo1w
+INFO [06-29|14:56:40.057] Loaded most recent local full block      number=0 hash="5614bf…3daf7e" td=1 age=1y1mo1w
+INFO [06-29|14:56:40.057] Loaded most recent local fast block      number=0 hash="5614bf…3daf7e" td=1 age=1y1mo1w
+INFO [06-29|14:56:40.057] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [06-29|14:56:40.058] Starting peer-to-peer node               instance=Geth/v1.9.24-stable-cc05b050/linux-amd64/go1.15.5
+INFO [06-29|14:56:40.063] Stored checkpoint snapshot to disk       number=0 hash="5614bf…3daf7e"
+INFO [06-29|14:56:40.145] New local node record                    seq=1 id=65ededfce553f8ca ip=127.0.0.1 udp=30300 tcp=30300
+INFO [06-29|14:56:40.146] IPC endpoint opened                      url=/home/administrator/demoPOA2/node0/geth.ipc
+INFO [06-29|14:56:40.160] Mapped network port                      proto=tcp extport=30300 intport=30300 interface=ExtIP(127.0.0.1)
+INFO [06-29|14:56:40.160] Mapped network port                      proto=udp extport=30300 intport=30300 interface=ExtIP(127.0.0.1)
+INFO [06-29|14:56:40.162] Started P2P networking                   self=enode://1872d1dff59241d16e2788661c8dd59e687c419c2f6c4f64b7b722cc2c0149a886f1bfd78e58d96b233660ab13f099334e55d1fb779c560dbf63412c613c2294@127.0.0.1:30300
+ERROR[06-29|14:56:40.783] Failed to enumerate USB devices          hub=trezor vendor=4617  failcount=3 err="failed to initialize libusb: libusb: unknown error [code -99]"
+ERROR[06-29|14:56:40.783] Failed to enumerate USB devices          hub=ledger vendor=11415 failcount=3 err="failed to initialize libusb: libusb: unknown error [code -99]"
+ERROR[06-29|14:56:40.783] Failed to enumerate USB devices          hub=trezor vendor=21324 failcount=3 err="failed to initialize libusb: libusb: unknown error [code -99]"
+INFO [06-29|14:56:40.836] Unlocked account                         address=0x7fFF1F93d22E9b2AA4C6a536531950ED386bd95e
+INFO [06-29|14:56:40.837] Transaction pool price threshold updated price=0
+INFO [06-29|14:56:40.837] Transaction pool price threshold updated price=0
+INFO [06-29|14:56:40.837] Commit new mining work                   number=1 sealhash="645372…332fcc" uncles=0 txs=0 gas=0 fees=0 elapsed="73.963µs"
+INFO [06-29|14:56:40.837] Sealing paused, waiting for transactions 
+INFO [06-29|14:56:50.206] Looking for peers                        peercount=1 tried=1 static=0
+INFO [06-29|14:57:00.250] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:57:10.280] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:57:20.311] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:57:30.359] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:57:40.396] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:57:50.433] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:58:00.460] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:58:10.498] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:58:20.529] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:58:30.555] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:58:40.601] Looking for peers                        peercount=1 tried=2 static=0
+INFO [06-29|14:58:50.626] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:59:00.651] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:59:12.186] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:59:22.215] Looking for peers                        peercount=1 tried=2 static=0
+INFO [06-29|14:59:32.740] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:59:43.260] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|14:59:53.288] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:00:03.324] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:00:13.357] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:00:23.392] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:00:33.433] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:00:43.466] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:00:53.501] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:01:03.537] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:01:13.581] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:01:23.614] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:01:33.652] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:01:43.702] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:01:53.730] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:02:03.772] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:02:13.799] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:02:23.833] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:02:33.865] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:02:43.904] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:02:53.949] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:03:04.008] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:03:14.041] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:03:24.078] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:03:34.119] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:03:44.166] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:03:54.203] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:04:04.238] Looking for peers                        peercount=1 tried=0 static=0
+INFO [06-29|15:04:13.398] Got interrupt, shutting down... 
+INFO [06-29|15:04:13.399] IPC endpoint closed                      url=/home/administrator/demoPOA2/node0/geth.ipc
+INFO [06-29|15:04:13.401] Ethereum protocol stopped 
+INFO [06-29|15:04:13.401] Transaction pool stopped 
+INFO [06-29|15:04:13.402] Writing clean trie cache to disk         path=/home/administrator/demoPOA2/node0/geth/triecache threads=1
+INFO [06-29|15:04:13.412] Persisted the clean trie cache           path=/home/administrator/demoPOA2/node0/geth/triecache elapsed=10.578ms
+INFO [06-29|15:04:13.413] Blockchain stopped 

@@ -1,0 +1,14 @@
+{
+  "ipfsPath": "/home/administrator/.ipfs2",
+  "ipfsBoostrap": ["/ip4/10.10.150.230/tcp/4001/ipfs/12D3KooWNjiRv9Uf4fcx58YhMyThMoxga9gxhMwMKU9M84eAANuz"],
+  "nodePath": "/home/administrator/actual_blockchain/iot-node/",
+  "addr": "0x47a267d59baDb1577CEe26c7A42E4E19aFC85cBA",
+  "password": "1",
+  "gatewayID": "SmartSantander",
+  "balanceContractAddr": "0x0F9cc0A3244674D191457247eEcacE2f2001c44D",
+  "accessContractAddr": "0xC2D2bbcE019CaaB73B5AA77bBbF95E32a91F8A2d",
+  "dataContractAddr": "0x26652D698F2B8245A4914D4F06F1512c28f87833",
+  "HTTPport": "5053",
+  "HTTPSport": "8053",
+  "priceMeasurements": 1
+}

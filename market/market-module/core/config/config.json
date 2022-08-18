@@ -1,0 +1,14 @@
+{
+  "nodePath": "/home/administrator/actual_blockchain/node0/",
+  "node2Path": "/home/administrator/actual_blockchain/clients-node/",
+  "ethAddress": "0x7fFF1F93d22E9b2AA4C6a536531950ED386bd95e",
+  "ethAddress2": "0x95160ef23D5D04906997727c290B8733F1009Baa",
+  "ethPassword": "1",
+  "balanceContractAddr": "0x0F9cc0A3244674D191457247eEcacE2f2001c44D",
+  "accessContractAddr": "0xC2D2bbcE019CaaB73B5AA77bBbF95E32a91F8A2d",
+  "dataContractAddr": "0x26652D698F2B8245A4914D4F06F1512c28f87833",
+  "HTTPport": "5050",
+  "HTTPSport": "8050",
+  "IPFSPath": "http://127.0.0.1:5001",
+  "totalSupply": 10000000
+}
