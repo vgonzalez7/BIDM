@@ -184,7 +184,7 @@ func initialize() (localClient, localClient) {
 }
 
 // AdminEP is the end point for the admin user. Here, the admin can send
-// new tokens to clients, add new producers to the access list, ...
+// new tokens to clients, add new producers to the access list, and more
 func (localClient *localClient) AdminEP(w http.ResponseWriter, req *http.Request) {
 	// Check whether the URL is correct or not
 	if req.URL.Path != "/admin" {

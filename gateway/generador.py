@@ -1,6 +1,10 @@
 # USO: llamar a esta funcion con un argumento en segundos
 # python generador.py 2 (genera una medida cada dos segundos)
 # python generador.py -poisson 2 (genera medidas con distr. de poisson de media 2 segundos)
+# ---
+# USAGE: call this program with an argument (in seconds)
+# python generador.py 2 (generate a measurement every 2 seconds)
+# python generador.py -poisson 2 (generate measurements with poisson distr. with mean 2 seconds)
 
 import requests, datetime, sys, time, random, numpy, json
 
@@ -26,10 +30,10 @@ if "-poisson" in opts:
 		data_json["timestamp"] = str(timestamp)
 		res = requests.post('http://10.10.150.229:5053/notify', headers=headers_json, data=json.dumps(data_json))
 		print("Medida enviada en timestamp", str(timestamp))
-		time.sleep(-media*numpy.log(random.random())); #Distribucion poisson (exponencial)
-                i = i + 1
-                if i >= 5000:
-                    break
+		time.sleep(-media*numpy.log(random.random())); #Poisson distribution (exponential)
+		i = i + 1
+		if i >= 5000: # limit to 5000, can remove
+			break
 else:
 	tiempo = float(args[0])
 	while True :
@@ -38,6 +42,6 @@ else:
 		res = requests.post('http://10.10.150.229:5053/notify', headers=headers_json, data=json.dumps(data_json))
 		print("Medida enviada en timestamp", str(timestamp))
 		time.sleep(tiempo)
-                i = i + 1
-                if i >= 5000:
-                    break
+		i = i + 1
+		if i >= 5000:
+			break

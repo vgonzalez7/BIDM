@@ -3,6 +3,7 @@
 This repository contains the code to replicate the Blockchain-based IoT Data Marketplace. The steps necessary to get everything running are as follows:
 
 - Make sure you have all dependencies - IPFS, NodeJS, and Go-Ethereum
+- Edit the configuration files (IoT proxy, market core and nodejs client server) to match your setup
 - Start the bootnode (you can use the shell script in the market folder)
 - Start the other nodes -node0 in market, clients-node in market and iot-node in gateway (it's also possible to use shell scripts within each node's folder)
 - Run the market core (executable in market/market-module/core)

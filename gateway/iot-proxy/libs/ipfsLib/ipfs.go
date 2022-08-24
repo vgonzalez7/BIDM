@@ -167,6 +167,5 @@ func AddToIPFS(ipfs icore.CoreAPI, file *bytes.Reader) (string, error) {
 		return "", err
 	}
 
-	//log.Printf("Medida añadida a IPFS con CID %s\n", cid.String())
 	return cid.Root().String(), nil
 }

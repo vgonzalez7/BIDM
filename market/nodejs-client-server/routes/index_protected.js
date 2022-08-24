@@ -85,7 +85,7 @@ function renderWallet(ethClient) {
         if (err) throw err;
     } );
 
-    // Topics a los que esta suscrito el cliente
+    // Topics the client is subscribed to
     let topics = await ethClient.dataSC.methods.getTopics().call();
     let topicsSub = [];
     for (i = 0; i < topics.length; i++) {
@@ -96,7 +96,7 @@ function renderWallet(ethClient) {
     }
     //console.log(topicsSub);
 
-    // Momento en el que se suscribió a esos topics por última vez
+    // Instant when the client subscribed to those topics
     let subBlock = [];
     let subBlocks = await ethClient.balanceSC.getPastEvents('Subscribe', {filter, fromBlock: 0})
     .catch((err) => {console.log(err);});
@@ -113,7 +113,7 @@ function renderWallet(ethClient) {
 
     let measurementsSubbed = [];
 
-    // Medidas registradas desde entonces
+    // Registered measurements since that instant
     let activeTopics = topicsSub.slice();
     let nextSub = Math.max(...subBlock);
 
@@ -277,7 +277,7 @@ function valueMeasurement(ethClient) {
       _hash: hash
     };
 
-    // Topics a los que pertenece la medida
+    // Topics of the measurement
     let topics = await ethClient.dataSC.methods.getMeasurementTopics(hash).call();
     let isAllowed = false;
     for (i = 0; i < topics.length; i++) {
@@ -302,7 +302,7 @@ function valueMeasurement(ethClient) {
     }
 
     // Fetch measurement from the marketplace
-	  // Slice: para quitar el "0x"
+	  // Slice: to remove "0x"
     url = ethClient.config.marketAddr + "/admin";
     let peticion = {
       "action": "medida",
@@ -330,7 +330,8 @@ function valueMeasurement(ethClient) {
 
       // Get IoT address
       let iotAddr = (await ethClient.dataSC.methods.ledger(hash).call()).addr;
-/*
+
+/*  #!old stuff
     // Get the encrypted url
     let secret = (await ethClient.web3.eth.getTransaction(txHash)).input;
 
@@ -413,7 +414,7 @@ function purchaseSubscription(ethClient) {
         , ethClient.accessSC.methods.addPubKey(pubKey)
         , privKey);
 
-      // Comprobar si ya esta suscrito
+      // Check if subscription is already active
       let isSub = await ethClient.balanceSC.methods.isSubscribed(address,topic).call();
 
       if (isSub) {

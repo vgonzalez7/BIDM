@@ -5,7 +5,7 @@ const secp256k1 = require('secp256k1');
 const fetch = require('node-fetch');
 
 /**
- * Initializes an instance of the contractç
+ * Initializes an instance of the contract
  * @param {web3}   Web3
  * @param {Object} abi 
  * @param {String} addr
@@ -105,14 +105,6 @@ function getFilesFromPath(path, pattern)
   return keyJSON;
 }
 
-
-/**
- * Recovers the private key of the client
- * @param {Web3} web3
- * @param {String} account 
- * @param {String} password
- * @return {String} privateKey 
- */
 function getPrivateKey(web3, folder, account, password)
 {
   // Get the UTC file that has the parameters to extract the 
@@ -129,13 +121,6 @@ function getPrivateKey(web3, folder, account, password)
   return (web3.eth.accounts.decrypt(keyJSON, password)).privateKey;
 }
 
-/**
- * Compares if the password introduced by the user is correct
- * @param {String} account 
- * @param {String} passwordHash 
- * @param {callback} callback 
- * @return Callback(error, account)
- */
 let authenticateUser = async function(ethClient, account, password, callback)
 {
   // Get the client's private key from the wallet

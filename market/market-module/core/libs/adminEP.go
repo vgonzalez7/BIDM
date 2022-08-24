@@ -65,7 +65,7 @@ func AdminListener(ethClient ComponentConfig, body map[string]interface{}) ([]by
 	    response := buf.Bytes()
 	    defer resp.Body.Close()
 
-        //Adquirir las claves de topic
+        //Get topic keys
         var keyParcial [32]byte
         keyParcial, err = ethClient.DataCon.GetTopicKey(auth2,topics[0])
 		if err != nil { return nil,err }

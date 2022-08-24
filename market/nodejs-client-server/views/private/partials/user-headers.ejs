@@ -11,8 +11,6 @@
 <script type="text/javascript">
   function logout()
   {
-    //const hostURL = "https://10.10.46.21:5054";
-
     $.post(hostURL + "/logout", null)
     .done(() => {
       window.location.replace('/');

@@ -88,6 +88,7 @@ func insertDataInBlockchain(ethClient ComponentConfig, dataStruct DataBlockchain
 	}
 
 /*	// Check if the data has been stored in the contract
+	//! This is not needed since calls wait for the response before continuing
 	// Wait until the value is received or the loop
 	// works for more than 15 seconds
 	currentTime := time.Now()
@@ -118,6 +119,7 @@ func insertDataInBlockchain(ethClient ComponentConfig, dataStruct DataBlockchain
 	}
 
 /*	// Check if the data has been stored in the contract
+	//! This is not needed since calls wait for the response before continuing
 	// Wait until the value is received or the loop
 	// works for more than 15 seconds
 	currentTime = time.Now()
@@ -258,7 +260,7 @@ func ProcessMeasurement(ethClient ComponentConfig, body map[string]interface{}) 
 		From: ethClient.Address,
 	}
 
-	//Adquirir las claves de topic
+	//Acquire topic keys
 	var keyParcial [32]byte
 	if created1 {
 		keyParcial, err = ethClient.DataCon.GetTopicKey(auth2,gatewayID)
